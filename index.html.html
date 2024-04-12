@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+.navbar {
+  width: 100%;
+  background-color:white;
+  overflow: auto;
+  
+}
+
+.navbar a {
+
+  float: right;
+  padding: 12px;
+  color: rgb(6, 5, 5);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #391f76;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+#div {
+    display:flex;
+    justify-content:space-evenly;
+    background-color:white;
+    margin:20px;
+
+     
+}
+h1{
+  text-align: center;
+}
+#search{
+    width:35%;
+    padding:10px;
+    border-radius:10px;
+    margin-left:15%;
+    background-color:rgb(224, 225, 225);
+    
+}
+#box{
+    display:flex;
+    margin:10px;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.next{
+    background-color: pink;
+    
+}
+h4,h5{
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.card{
+  background-color: white;
+  margin:20px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  width:95%;
+  height:130%;
+
+}
+h3{
+  margin-left: 40px;
+  
+}
+
+
+footer{
+  background-color: black;
+  width:100%;
+  padding:30px 10px 20px 10px; 
+  color:grey;
+}
+.card1:hover {
+  transform:scale(1.1); 
+}
+
+.h4{
+  margin-left:200px;
+  text-align: justify;
+}
+h6{
+  text-align: justify;
+}
+p{
+  margin-top: 10px;
+  font-size: 12px;
+  color:white;
+}
+</style>
+<body>
+
+
+
+<div class="navbar" >
+   <img src="C:\Users\Ranga\Downloads\fkheaderlogo_exploreplus-44005d.svg">
+   
+  <a href="#"><i class="fa fa-fw fa-home"></i> Become Seller</a>
+  <a href="#"><i class="fa fa-fw fa-profile"></i> Login</a> 
+  <a href="#"><i class="fa fa-fw fa-cart"></i> Cart</a>
+  <input id="search"   class="fa fa-search" placeholder="search here for products">
+</div>
+<div class="container-fluid">
+    <div id="div" class="row">
+        <div class="clo">
+            <img src="C:\Users\Ranga\Downloads\29327f40e9c4d26b.webp">
+            <h5>Grocery</h5>
+        </div>
+        <div class="clo">
+            <img src="C:\Users\Ranga\Downloads\22fddf3c7da4c4f4.webp">
+            <h5>Mobiles</h5>
+        </div>
+        <div class="clo">
+            <img src="C:\Users\Ranga\Downloads\fashion.png" style="width:95px;">
+            <h5>Fashion</h5>
+        </div>
+        <div class="clo">
+            <img src="C:\Users\Ranga\Downloads\device.jpg" style="width:155px;">
+            <h5>Electronics</h5>
+        </div>
+        <div class="clo-2">
+            <img src="C:\Users\Ranga\Downloads\furniture.jpg" style="width:95px;">
+            <h5>Home&Furniture</h5>
+        </div>
+        <div class="clo">
+            <img src="C:\Users\Ranga\Downloads\0139228b2f7eb413.webp">
+            <h5>Appliances</h5>
+        </div>
+        <div class="clo">
+            <img src="C:\Users\Ranga\Downloads\71050627a56b4693 (1).webp">
+            <h5>Travel</h5>
+        </div>
+        <div class="clo-2">
+            <img src="C:\Users\Ranga\Downloads\tedddd.jpeg" style="width:140px;">
+            <h5>Beauty,Toys&More</h5>
+        </div>
+        <div class="clo-2">
+            <img src="C:\Users\Ranga\Downloads\vehicle.jpeg" style="width:135px; float:middle;">
+            <h5>Two Wheelers</h5>
+        </div>
+    </div>
+</div>
+
+
+    <!-- carousel-->
+    
+<div class="container" style="margin-bottom:30px; margin-top:10px;">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+   
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="C:\Users\Ranga\Downloads\img1.webp"  style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\Ranga\Downloads\img2.webp" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="C:\Users\Ranga\Downloads\img3.webp" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\Ranga\Downloads\img4.webp" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\Ranga\Downloads\img5.webp" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\Ranga\Downloads\img6.webp" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\Ranga\Downloads\img7.webp" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\Ranga\Downloads\img8.webp" style="width:100%;">
+      </div>
+
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+    <!-- cards -->
+
+    
+<div style="background-color:white; padding:10px 10px 0px 10px;">
+  <h3><b>Best Of Electronics</b></h3>
+
+<div class="card" >
+
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey; ;">
+<img src="C:\Users\Ranga\Downloads\camm.jpg" class="card1" style="width:100%; height:60%; padding:10px 5px 0px 10px; margin-top:30px; ">
+<div class="w3-container w3-center">
+<h5 style="margin-top:20px;">Top Mirrorless Camera</h5>
+    <h4><b>Shop Now!</b></h4>
+</div>
+</div>
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey;">
+<img src="C:\Users\Ranga\Downloads\projec.webp" class="card1" style="width:71%; margin-top:10px; padding:10px 5px 0px 10px; margin-left:30px;margin-bottom:20px;">
+<div class="w3-container w3-center">
+<h5>Projectors</h5>
+    <h4><b>From 9999/-</b></h4>
+</div>
+</div>
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey;">
+<img src="C:\Users\Ranga\Downloads\monitor.jpeg" class="card1" style="width:100%; height:78%; padding:10px 5px 0px 10px;">
+<div class="w3-container w3-center">
+<h5>Monitor</h5>
+    <h4><b>From 8279/-</b></h4>
+</div>
+</div>
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey;">
+<img src="C:\Users\Ranga\Downloads\images (1).jpeg" class="card1" style="width:100%; height:78%; padding:10px 5px 0px 10px;">
+<div class="w3-container w3-center">
+<h5>Printers</h5>
+    <h4><b>From 3999/-</b></h4>
+</div>
+</div>
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey;">
+<img src="C:\Users\Ranga\Downloads\download (2).jpeg" class="card1" style="width:100%; height:78%; ">
+<div class="w3-container w3-center">
+<h5>Best Of shavers</h5>
+    <h4><b>From 1,699/-</b></h4>
+</div>
+</div>
+
+<div class="w3-card-4" style="width:15%">
+<img src="C:\Users\Ranga\Downloads\codee.webp" class="card1" style="width:100%">
+<div class="w3-container w3-center">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+   <!--cards--> 
+
+<div class="container" style="margin-top:30px; margin-bottom:30px; background-color:white; padding-top:20px;">
+  <div class="row">
+     <div class="col-md-4">
+        <img src="C:\Users\Ranga\Downloads\flipkart\image1.webp"  style="width:105%;"><br><br>
+        
+  
+</div>
+       <div class="col-md-4">
+          <img src="C:\Users\Ranga\Downloads\flipkart\image2.webp" style="width:105%"><br><br>
+           
+    </div>
+
+    
+      
+         <div class="col-md-4">
+            <img src="C:\Users\Ranga\Downloads\flipkart\image3.webp" style="width:105%"><br><br>
+             </div>
+      
+</div>
+</div>
+
+
+
+
+ <!-- cards -->
+
+    
+ <div style="background-color:white; padding:10px;">
+  <h3><b>Top Deals</b></h3>
+
+<div class="card" >
+
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey; height:20%;">
+<img src="C:\Users\Ranga\Downloads\flipkart\shoe.jpeg" class="card1" style="width:100%; height:40%; padding:10px 20px 10px 20px; margin-bottom:20px;">
+<div class="w3-container w3-center">
+<h5>PUMA and New Balance </h5>
+    <h4 style="margin-bottom:10px;"><b>Min.60-80% Off</b></h4>
+</div>
+</div>
+
+
+
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey; height:20%;" >
+  <img src="C:\Users\Ranga\Downloads\flipkart\spect.jpeg" class="card1" style="width:100%;  padding:10px 20px 10px 20px; height:60%; margin-bottom:20px;">
+  <div class="w3-container w3-center">
+  <h5>Fastrack,Ray-Ban,IDEE...</h5>
+      <h4 style="margin-bottom:10px;"><b>30-80% Off</b></h4>
+  </div>
+  </div>
+
+
+  <div class="w3-card-4" style="width:15%; border:1px solid grey; height:20%;">
+    <img src="C:\Users\Ranga\Downloads\flipkart\allen.jpeg" class="card1" style="width:100%; padding:10px 20px 0px 30px;  height:10%; margin-bottom:20px; margin-right:20px;">
+    <div class="w3-container w3-center">
+    <h5>Allen Solly & Van Heusen</h5>
+        <h4 style="margin-bottom:10px;"><b>40-60% Off</b></h4>
+    </div>
+    </div>
+
+
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey; height:20%;">
+<img src="C:\Users\Ranga\Downloads\flipkart\dress.jpeg" class="card1" style="width:100%; padding:15px 20px 10px 20px; height:20%; margin-bottom:30px;">
+<div class="w3-container w3-center">
+<h5>Tokyo Talkies,Clovia</h5>
+    <h4 style="margin-bottom:10px;" ><b>Min 65% Off</b></h4>
+</div>
+</div>
+
+
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey; height:20%;">
+  <img src="C:\Users\Ranga\Downloads\flipkart\jumsuit.webp" class="card1" style="width:100%;  margin-top:10px; padding:15px 20px 0px 20px;margin-left:10px;margin-bottom:20px;">
+  <div class="w3-container w3-center">
+  <h5>Puma,ADIDAS,Killer...</h5>
+      <h4 style="margin-bottom:10px;"><b>Up to 85% </b></h4>
+  </div>
+  </div>
+  
+  
+
+<div class="w3-card-4" style="width:15%; border:1px solid grey; height:20%; ">
+<img src="C:\Users\Ranga\Downloads\flipkart\shirt.jpeg" class="card1" style="width:100%; height:60%; padding:15px 20px 3px 30px; margin-bottom:30px;">
+<h5>Being Human,Provogue,..</h5>
+    <h4 style="margin-bottom:10px;"><b>70-90% Off</b></h4>
+<div class="w3-container w3-center">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+ <!--cards1--> 
+
+ <div class="container" style="margin-top:30px;  background-color:white; ">
+  <div class="row" style="justify-content:space-between;">
+     <div class="col-md-4">
+        <img src="C:\Users\Ranga\Downloads\flipkart\photo1.webp" style="width:105%;"><br><br>
+        
+  
+</div>
+       <div class="col-md-4">
+          <img src="C:\Users\Ranga\Downloads\flipkart\photo2.webp" style="width:105%"><br><br>
+           
+    </div>
+
+    
+      
+         <div class="col-md-4">
+            <img src="C:\Users\Ranga\Downloads\flipkart\photo3.webp" style="width:105%"><br><br>
+             </div>
+      
+</div>
+</div>
+
+ <!--cards2--> 
+
+ <div class="container" style=" background-color:white; ">
+  <div class="row">
+     <div class="col-md-4">
+        <img src="C:\Users\Ranga\Downloads\flipkart\photo4.webp" style="width:105%;"><br><br>
+        
+  
+</div>
+       <div class="col-md-4">
+          <img src="C:\Users\Ranga\Downloads\flipkart\photo5.webp" style="width:105%"><br><br>
+           
+    </div>
+
+    
+      
+         <div class="col-md-4">
+            <img src="C:\Users\Ranga\Downloads\flipkart\photo6.webp" style="width:105%"><br><br>
+             </div>
+      
+</div>
+</div>
+
+ <!--cards--> 
+
+ <div class="container" style=" background-color:white;">
+  <div class="row">
+     <div class="col-md-4">
+        <img src="C:\Users\Ranga\Downloads\flipkart\photo7.webp" style="width:105%;"><br><br>
+        
+  
+</div>
+       <div class="col-md-4">
+          <img src="C:\Users\Ranga\Downloads\flipkart\photo8.webp" style="width:105%"><br><br>
+           
+    </div>
+
+    
+      
+         <div class="col-md-4">
+            <img src="C:\Users\Ranga\Downloads\flipkart\photo9.webp" style="width:105%"><br><br>
+             </div>
+      
+</div>
+</div>
+
+ <!--cards4--> 
+
+ <div class="container" style=" margin-bottom:30px; background-color:white; ">
+  <div class="row">
+     <div class="col-md-4">
+        <img src="C:\Users\Ranga\Downloads\flipkart\photo10.webp" style="width:105%;"><br><br>
+        
+  
+</div>
+       <div class="col-md-4">
+          <img src="C:\Users\Ranga\Downloads\flipkart\photo11.webp" style="width:105%"><br><br>
+           
+    </div>
+
+    
+      
+         <div class="col-md-4">
+            <img src="C:\Users\Ranga\Downloads\flipkart\photo12.webp" style="width:105%"><br><br>
+             </div>
+      
+</div>
+</div>
+
+
+
+<div class="container" style="width:94%; background-color:white; ";>
+  <div class="row" style="margin-top:40px;">
+    <div class="col-md-4">
+<div class="row" style="display:flex; ">
+<div class="card" style="border:1px solid black; padding:20px 20px 70px 20px;">
+  <img class="card1" src="C:\Users\Ranga\Downloads\flipkart\lapbag.jpeg" style="width:100%; height:30%;">
+ 
+</div>
+<div class="card"  style="border:1px solid black; padding:20px 20px 100px 20px;">
+  <img class="card1" src="C:\Users\Ranga\Downloads\flipkart\gaming.jpeg" style="width:100%; height:30%; ">
+</div>
+
+</div>
+
+<div class="row" style="display:flex;">
+  <div class="card">
+    <img class="card1" src="C:\Users\Ranga\Downloads\flipkart\jean.jpeg" style="width:100%; border:1px solid black; padding:20px 20px 60px 20px; height:40%;">
+  </div>
+  <div class="card">
+    <img class="card1" src="C:\Users\Ranga\Downloads\flipkart\shampoo.jpeg" style="width:100%; border:1px solid black; padding:20px 20px 100px 20px; height:50%; ">
+  </div>
+  
+  </div>
+
+    </div>
+
+
+
+
+    <div class="col-md-8" style="background-color:#EFECEC; padding:30px;">
+    <div class="row">
+<img src="C:\Users\Ranga\Downloads\flipkart\flipkart.jpeg" style="margin-left:200px; width:30px; ">
+<div>
+<h1 >Top Selling Smart Phones</h1>
+<h4 class="h4">Latest Technology,Best Brands</h4>
+<img src="C:\Users\Ranga\Downloads\mobile.jpeg" style="width:100%;   height:350px;">
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+ <!--cards--> 
+
+ <div class="container" style="margin-top:30px; margin-bottom:30px; background-color:white; padding-top:20px;">
+  <div class="row">
+     <div class="col-md-4">
+        <img src="C:\Users\Ranga\Downloads\fan1.webp" style="width:105%;"><br><br>
+        
+  
+</div>
+       <div class="col-md-4">
+          <img src="C:\Users\Ranga\Downloads\fan2.webp" style="width:105%"><br><br>
+           
+    </div>
+
+    
+      
+         <div class="col-md-4">
+            <img src="C:\Users\Ranga\Downloads\fan3.webp" style="width:105%"><br><br>
+             </div>
+      
+</div>
+</div>
+
+
+
+
+<!--footer-->
+<footer>
+  <div class="foot">
+<div class="row" style="width: 100%; margin-left:6px; margin-top:20px;">
+  <div class="col-md-2">
+    <h6>ABOUT</h6>
+    <p>Contact Us<br>
+    About Us<br>
+    Careers<br>
+    Flipkart Stories<br>
+    Press<br>
+    Corporate Information</p>
+    </div>
+  
+  <div class="col-md-2">
+    <h6>GROUP COMPANIES</h6>
+    <p>Myntra<br>
+    Flipkart Wholesale<br>
+    Cleartrip<br>
+    Shopsy</p>
+  </div>
+  
+  <div class="col-md-2">
+    <h6>HELP</h6>
+    <p>Payments<br>
+    Shipping<br>
+    Cancellation&<br>
+      Returns<br>
+      FAQ<br>
+      Report Infringement</p>
+  </div>
+  
+  <div class="col-md-2">
+    <h6>CONSUMER POLICY</h6>
+    <p>Cancellation&<br>
+    Terms of Use<br>
+    Security<br>
+    Privacy<br>
+    Sitemap<br>
+      Grievance Redressal<br>
+      EPR Compliance</p>
+  </div>
+
+  <div class="col-md-2">
+    <h6>Flipkart Internet Private Limited,</h6>
+    <p>Buildings Alyssa,Begonia&<br>
+    Clove Embassy Tech Village,<br>
+    Outer Ring Road,Devarabessanahalli Village,<br>
+    Bengaluru,560103,<br>
+    Karnataka,india</p><br>
+
+    <h6>social :</h6>
+    <img src="C:\Users\Ranga\Downloads\facebook.jpg"style=" width:30px;">
+    <img src="C:\Users\Ranga\Downloads\twitter1.png" style=" width:20px;">
+    <img src="C:\Users\Ranga\Downloads\youtube.png" style=" width:50px;">
+    
+  </div>
+
+  <div class="col-md-2">
+    <h6>Registered Office Address</h6>
+    <p>Buildings Alyssa,Begonia&<br>
+      Clove Embassy Tech Village,<br>
+      Outer Ring Road,Devarabessanahalli Village,<br>
+      Bengaluru,560103,<br>
+      Karnataka,india<br>
+    CIN:U51109KA2012PTC066101<br>
+  Telephone:<span {color:"blue"}>044-45614700</span></p>
+  </div>
+  </div><br><hr>
+
+  <div class="row">
+    <div class="col-md-8" style="display:flex; justify-content:center; margin-top:0px;">
+   
+    <img src="C:\Users\Ranga\Downloads\home.svg" >
+    <p style="margin-left:10px;" >Become a Seller</p>
+    
+
+  
+      <img src="C:\Users\Ranga\Downloads\advertise.svg" style="margin-left:50px;">
+      <p style="margin-left:10px;" >Advertise</p>
+    
+
+      <img src="C:\Users\Ranga\Downloads\gift.svg" style="margin-left:50px;" >
+      <p style="margin-left:10px;" >Gift Cards</p>
+    
+
+   
+      <img src="C:\Users\Ranga\Downloads\help.svg" style="margin-left:50px;"  >
+      <p style="margin-left:10px;" >Help Center</p>
+    
+
+    
+      
+      <p style="margin-left:50px;"  >@ 2007-2004 Flipkart.com</p>
+    </div>
+
+    
+
+    <div class="col-md-4" style="display:flex;">
+      <img style="margin-top: 10px;" src="C:\Users\Ranga\Downloads\payment-method-c454fb.svg">
+      
+    </div>
+
+    
+  
+  </div>
+
+</footer>
+
+</body>
+</html> 
